@@ -51,7 +51,8 @@ MariaDB [circles]> select id, radius, circle_area(radius) from radii;
 MariaDB [classicmodels]> CREATE FUNCTION convert_time RETURNS STRING SONAME "convert_time.so";
 Query OK, 0 rows affected (0.00 sec)
 
-MariaDB [classicmodels]> select convert_time(500);+--------------------------------+
+MariaDB [classicmodels]> select convert_time(500);
++--------------------------------+
 | convert_time(500)              |
 +--------------------------------+
 | 0 Hours, 8 Minutes, 20 Seconds |
