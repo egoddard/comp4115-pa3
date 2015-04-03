@@ -1,5 +1,6 @@
 #Part Two
 #Area of a Circle
+
 ```SQL
 MariaDB [(none)]> CREATE FUNCTION circle_area RETURNS REAL SONAME "circle_area.so";
 Query OK, 0 rows affected (0.00 sec)
@@ -44,7 +45,8 @@ MariaDB [circles]> select id, radius, circle_area(radius) from radii;
 4 rows in set (0.00 sec)
 ```
 
-##Part Two
+## Seconds to Hours, Minutes, Seconds
+
 ```SQL
 MariaDB [classicmodels]> CREATE FUNCTION convert_time RETURNS STRING SONAME "convert_time.so";
 Query OK, 0 rows affected (0.00 sec)
